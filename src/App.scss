@@ -1,0 +1,135 @@
+
+   *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+
+   body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(181, 239, 243);
+   }
+
+   .todoWrapper{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+    .container{
+        margin-top: 10px;
+        border: 1px solid black;
+        padding: 5px 15px;
+    }
+   }
+
+   //TODO_FORM
+   .todo-form{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    min-height: 30px;
+    display: flex;
+    align-items: center;
+
+    .todo-input{
+    background-color: rgb(232, 235, 232);
+    min-height: 60px;
+    min-width: 500px;
+    font-weight: 500;
+    font-size: 27px;
+    padding-left: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    border: none;
+   }
+
+   .todo-plus{
+    font-size: 45px;
+    margin-left: 10px;
+   }
+   }
+   
+
+   //CHANGE_TODO_FORM
+
+   .changeTodo-form{
+    margin-top: 30px;
+    min-height: 30px;
+    display: flex;
+    align-items: center;
+
+    .Update-todo-input{
+        background-color: rgb(232, 235, 232);
+    min-height: 60px;
+    min-width: 500px;
+    font-weight: 500;
+    font-size: 27px;
+    padding-left: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    border: none;
+    }
+    
+    .todo-save{
+    font-size: 42px;
+    margin-left: 10px;
+    }
+   }
+
+   //TODO
+
+   .todo{
+    position: relative;
+    margin-top: 20px;
+    min-height: 51px;
+    border-radius: 5%;
+    border: 2px solid rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    padding: 0 4px;
+    background-color: rgb(18, 45, 85);
+    align-items: center;
+    .todo-task{
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 300;
+        font-size: 26px;
+        color: white;
+        max-width: 370px;
+        // overflow-wrap: break-word;
+        word-break: break-word;    
+    }
+
+    .completed{
+        text-decoration-line: line-through;
+    }
+
+    .checkBox{
+        margin-left: 10px;
+        margin-right: 20px;
+        border: 1px solid white;
+        width: 35px;
+        min-height: 32px;
+        font-size: 22px;
+        padding: 2px;
+
+        .todo-done{
+            color: rgb(212, 208, 208);
+        }
+    }
+
+    .icons{
+        position: absolute;
+        right: 0;
+    }
+    .todo-pencil{
+    font-size: 25px;
+    margin: 0 13px;
+    color: rgb(212, 208, 208);
+    }
+    .todo-trash{
+    font-size: 25px;
+    margin:0 13px;
+    color: rgb(212, 208, 208);
+    }
+   }
+
+   
